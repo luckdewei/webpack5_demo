@@ -12,7 +12,10 @@ module.exports = merge(webpackCommonConf, {
       // 直接引入图片 url
       {
         test: /\.(png|jpg|jpeg|gif)$/,
-        use: "file-loader",
+        type: 'asset/resource',
+        generator: {
+          filename: 'images/[name][ext]'
+        }
       },
     ],
   },
