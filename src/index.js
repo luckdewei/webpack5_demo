@@ -1,6 +1,7 @@
 // 入口文件
 // 导入样式文件
 import './css/index.less';
+import './css/index.css';
 
 console.log('Webpack 应用已成功加载！');
 
